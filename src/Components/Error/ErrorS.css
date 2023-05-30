@@ -1,0 +1,15 @@
+.error
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333232;
+}
+.error h1
+{
+    margin: auto;
+    font-size: 80px;
+    color: #62f400;
+}

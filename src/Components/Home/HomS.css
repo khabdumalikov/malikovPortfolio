@@ -1,0 +1,583 @@
+
+/* @import  url("https://cdn.pixabay.com/photo/2015/03/03/05/56/avenue-656969_960_720.jpg"); */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.hom {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* overflow-y: scroll; */
+    background-color: #1A202C;
+}
+
+.night {
+    position: absolute;
+    z-index: 10;
+    top: 3%;
+    right: 3%;
+    cursor: pointer;
+}
+
+.night .den {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.night .den .fa-brands {
+    color: #FFB400;
+    margin: auto ;
+    font-size: 20px;
+}
+
+.night .den h1 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.night .den h2 {
+    color: #FFB400;
+    font-size: 17px;
+    margin-left: 5px;
+}
+
+@media screen and (max-width:450px) {
+    .night {
+        position: absolute;
+        z-index: 10;
+        top: 2%;
+        right: 2%;
+    }
+
+    .night .den {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .night .den .fa-brands {
+        color: #FFB400;
+        margin: auto;
+        font-size: 12px;
+    }
+
+    .night .den h1 {
+        color: #fff;
+        font-size: 12px;
+    }
+
+    .night .den h2 {
+        color: #FFB400;
+        font-size: 12px;
+        margin-left: 4px;
+    }
+}
+
+.fesbok {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    left: 4%;
+    bottom: 10px;
+
+}
+
+.fesbok .inst {
+    padding: 10px 20px;
+}
+
+.fesbok .inst .fa-brands {
+    color: #ffffff98;
+    font-size: 22px;
+    margin: 7px;
+    transition: all 3s;
+    animation: ins 2s linear infinite;
+    opacity: 0;
+}
+
+@keyframes ins {
+    0% {
+        opacity: 0;
+        transition: .3s;
+    }
+
+    100% {
+        opacity: 1;
+        transition: .3s;
+    }
+}
+
+.img {
+    position: relative;
+    top: 0;
+    width: 350px;
+    height: 100%;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.img img {
+    height: 200px;
+    border-radius: 20px;
+}
+
+.layout {
+    max-width: 280px;
+    width: 100%;
+    height: 450px;
+    box-shadow: 0 0 15px;
+    border-radius: 25px;
+    position: absolute;
+    z-index: -11;
+    left: 1%;
+    top: 0;
+    scale: 1;
+    background: url("https://www.netguru.com/hs-fs/hubfs/Frontend%20technologies.jpeg?width=700&name=Frontend%20technologies.jpeg") no-repeat center center / cover;
+    transform: skewX(-30deg);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.layout::after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: -50%;
+    left: -50%;
+    max-width: 408px;
+    width: 100%;
+    min-height: 393px;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, rgba(0, 255, 255, 0.535));
+    animation: anim 6s linear infinite;
+    animation-delay: -3s;
+}
+
+.layout::before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: -50%;
+    left: -50%;
+    max-width: 408px;
+    width: 100%;
+    min-height: 393px;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, rgba(0, 255, 255, 0.519));
+    animation: anim 6s linear infinite;
+}
+
+@keyframes anim {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.layout .icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.layout .icon i {
+    margin: 10px;
+    opacity: 0;
+    animation: icoon 2s linear infinite;
+    color: #fff;
+    font-size: 11px;
+}
+
+.textbox {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes icoon {
+    0% {
+        opacity: 0;
+        transition: .3s;
+    }
+
+    100% {
+        opacity: 1;
+        transition: .3s;
+    }
+}
+
+@media screen and (max-width:820px) {
+
+    .fesbok {
+        position: absolute;
+        z-index: 10;
+        display: flex;
+        flex-direction: row;
+        left: 4%;
+        bottom: 6%;
+
+    }
+
+    .fesbok .inst {
+        padding: 10px 10px;
+    }
+
+    .fesbok .inst .fa-brands {
+        color: #ffffff75;
+        font-size: 17px;
+        margin: 7px;
+    }
+
+    .layout {
+        width: 200px;
+        height: 250px;
+        left: 30%;
+        top: 10%;
+    }
+
+
+    .img img {
+        border-radius: 30px;
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .textbox {
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .textbox {
+        margin-right: 40px;
+    }
+}
+
+.textbox h1 {
+    position: relative;
+    font-size: 35px;
+    font-weight: 700;
+    color: #6e736e00;
+    -webkit-text-stroke: 0vw #383d52;
+    text-transform: uppercase;
+    transition: 4s linear inherit;
+}
+
+.textbox h1::before {
+    content: attr(data-text);
+    position: absolute;
+    width: 0%;
+    height: 20%;
+    color: #FFB400;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid #ffb300;
+    overflow: hidden;
+    animation: th1 4s linear infinite;
+
+}
+
+@keyframes th1 {
+
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+
+    70%,
+    90% {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.textbox h2 {
+    font-size: 33px;
+    color: #ffff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.textbox p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.903);
+    font-family: cursive;
+    margin-right: 20px;
+}
+
+.textbox button {
+    position: relative;
+    width: 180px;
+    height: 45px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    background: none;
+    border: 1px solid #FFB400;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.textbox button label {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+.textbox button i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #FFB400;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.textbox button .span {
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: .3s;
+}
+
+.textbox button:hover .span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFB400;
+    transition: .4s;
+}
+
+@media screen and (max-width:820px) {
+    .hom {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* background-color: #383d52; */
+        background: #2D3748;
+    }
+
+
+    .img {
+        position: relative;
+        width: 223px;
+        height: 223px;
+        border-radius: 50%;
+        border: 2px solid rgb(3, 155, 79);
+        display: flex;
+        box-shadow: 0 0 0 5px aqua;
+        margin: 30px auto;
+
+    }
+
+    .img img {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        margin: auto;
+    }
+
+    .textbox {
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+
+    }
+
+    .textbox button {
+        position: relative;
+        width: 120px;
+        height: 30px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        background: none;
+        border: 1px solid #FFB400;
+        margin-top: 0;
+        /* bottom: 10%; */
+        overflow: hidden;
+    }
+
+    .textbox button label {
+        font-size: 8px;
+        color: #fff;
+        font-weight: 400;
+        margin-left: 8px;
+        text-transform: uppercase;
+    }
+
+    .textbox button i {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #FFB400;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+    }
+    .layout::after {
+        content: '';
+        position: absolute;
+        z-index: 2;
+        top: -50%;
+        left: -50%;
+        max-width: 208px;
+        width: 100%;
+        min-height: 253px;
+        transform-origin: bottom right;
+        background: linear-gradient(0deg, transparent, rgba(0, 255, 255, 0.535));
+        animation: anim 6s linear infinite;
+        animation-delay: -3s;
+    }
+    
+    .layout::before {
+        content: '';
+        position: absolute;
+        z-index: 2;
+        top: -50%;
+        left: -50%;
+        max-width: 208px;
+        width: 100%;
+        min-height: 253px;
+        transform-origin: bottom right;
+        background: linear-gradient(0deg, transparent, rgba(0, 255, 255, 0.519));
+        animation: anim 6s linear infinite;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .hom {
+        /* padding-bottom: 20px; */
+        background: none;
+        background-color: #383d52;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .textbox h1 {
+        font-size: 22px;
+        color: #4846413d;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .textbox h2 {
+        font-size: 21px;
+        color: #ffff;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .textbox p {
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.829);
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 10px auto;
+    }
+    .textbox {
+        max-width: 500px;
+        width: 100%;
+        margin: auto ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        padding: 0 10px;
+
+    }
+
+    .textbox button {
+        width: 120px;
+        height: 30px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        background: none;
+        border: 1px solid #FFB400;
+        margin-top: 40 !important;
+        /* bottom: 10%; */
+        overflow: hidden;
+    }
+
+    .textbox button label {
+        font-size: 8px;
+        color: #fff;
+        font-weight: 400;
+        margin-left: 8px;
+        text-transform: uppercase;
+    }
+
+    .textbox button i {
+
+        width: 29px;
+        height: 29px;
+        border-radius: 50%;
+        top: -1px;
+        right: 0;
+    }
+    .layout {
+        width: 200px;
+        height: 250px;
+        left: 20%;
+        top: 10%;
+        transform: skewX(-15deg);
+        }
+
+}

@@ -1,0 +1,35 @@
+.dellite
+{
+    color: red;
+    cursor: pointer;
+}
+.buttonDelite
+{
+    border: none;
+}
+
+th
+{
+    font-size: 15px;
+}
+.col
+{
+    font-size: 10px;
+}
+.table
+{
+    border-radius: 20px;
+}
+.inputAdd
+{
+    font-size: 13px;
+}
+@media screen and (max-width:450px) {
+    .inputAdd{
+        font-size: 10px;
+    }
+    .col
+{
+    font-size: 10px;
+}
+}

@@ -1,0 +1,241 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+[data-aos][data-aos][data-aos-duration="1200"], body[data-aos-duration="1200"] [data-aos] {
+    transition-duration: 1.2s;
+}
+.title-section {
+    margin: auto 0;
+    padding: 80px 0;
+    position: relative;
+}
+.portfolio
+{
+    padding: 20px 0;
+}
+@media (min-width: 576px)
+{
+.text-sm-center {
+    text-align: center;
+}
+}
+.title-section h1 {
+    color: #fff;
+    font-size: 56px;
+    font-weight: 900!important;
+    margin: 0;
+    text-transform: uppercase;
+}
+.title-section h1 span
+{
+    color: #ffb400;
+}
+.title-bg {
+    color: hsla(0,0%,100%,.07);
+    font-size: 110px;
+    font-weight: 800;
+    left: 0;
+    letter-spacing: 10px;
+    line-height: .7;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+@media screen and (max-width:630px) {
+    .title-section h1
+    {
+        font-size: 40px;
+    }
+    .title-bg{
+        font-size: 80px;
+    }
+}
+@media screen and (max-width:450px) {
+    .title-section h1
+    {
+        font-size: 25px;
+    }
+    .title-bg{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:350px) {
+    .title-section h1
+    {
+        font-size: 20px;
+    }
+    .title-bg{
+        font-size: 40px;
+    }
+}
+.rect_tabs
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.portfolio_tab_list
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* padding-inline-start: 40px; */
+    list-style: none;
+}
+ul.portfolio_tab_list
+{
+    padding: 0;
+}
+.react-tabs_tab
+{
+    margin: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    
+}
+.react-tabs_tab:hover
+{
+    color: #ffb400;
+}
+.tab-container
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.content
+{
+    max-width: 300px;
+    width: 100%;
+    border:1px solid red;
+    margin-left: 5px ;
+    margin-right: 5px;
+    /* margin: 10px; */
+}
+.content_title
+{
+    display: none;
+}
+.Tab-img1,
+.Tab-img2,
+.Tab-img3   
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.card
+{
+    position: relative;
+    max-width: 320px;
+    width: 100%;
+    margin: 10px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: .3s;
+    overflow: hidden;
+}
+.card img
+{
+    border-radius: 0.5rem;
+    height: 100%;
+    display: block;
+}
+.card .images
+{
+    width: 100%;
+    height: 100%;
+    /* margin: 5px; */
+}
+.active
+{
+    width: 100%;
+    height: 100%;
+    background-color: #ffb400;
+    transition: .3s;
+}
+
+.Tab-img1 .card .cocacola
+{
+    position: absolute;
+    border-radius: 0.5rem;
+    top:  -30%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    -wepkit-transform:translateY(50% , 50%);
+    transform: translate(50% , 50%);
+    opacity: 0;
+    transform: translateY(50px);
+    /* display: none; */
+    transition: all .3s ;
+    margin: 0;
+}
+.Tab-img1 .card a
+{
+    width: 100%;
+    height: 100%;
+}
+.Tab-img1 .card:hover .cocacola
+{
+    opacity: 1;
+    /* display: block; */
+    visibility: visible;
+    transition: all .3s;
+    top:  50%;
+    left: 50%;
+    display: block;
+    -wepkit-transform:translateY(-50% , -50%);
+    transform: translate(-50% , -50%);
+}
+
+.Tab-img2 .card .niChild2
+{
+    position: absolute;
+    border-radius: 0.5rem;
+    top:  -30%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    -wepkit-transform:translateY(50% , 50%);
+    transform: translate(50% , 50%);
+    opacity: 0;
+    transform: translateY(50px);
+    /* display: none; */
+    transition: all .3s ;
+    margin: 0;
+}
+.Tab-img2 .card a
+{
+    width: 100%;
+    height: 100%;
+}
+.Tab-img2 .card:hover .niChild2
+{
+    opacity: 1;
+    /* display: block; */
+    visibility: visible;
+    transition: all .3s;
+    top:  50%;
+    left: 50%;
+    display: block;
+    -wepkit-transform:translateY(-50% , -50%);
+    transform: translate(-50% , -50%);
+}
